@@ -14,6 +14,8 @@ And every reply that needs something from you ends with a numbered list of exact
 
 Real example. The assistant had just finished a build and reported back:
 
+### Example 1
+
 **Before**
 
 > Good news on the build. The compose file matches the reference exactly now, which confirms the earlier fixes landed correctly. There is one remaining difference in the Dockerfile: the helper functions we added to the docs last week are not present in your working image. This is expected, since you have not rebuilt since that change. The check is behaving correctly here and the difference is a real finding rather than a false positive. Adding those three lines to the bashrc section and rebuilding would bring everything into alignment, after which the verification should pass cleanly.
@@ -38,6 +40,8 @@ The reader would have to reverse-engineer the instruction out of the last senten
 > Expected: `PASS`. Paste me the output either way.
 
 Same information. One is a status update you have to decode, the other is something you can act on in ten seconds.
+
+### Example 2
 
 A shorter one. Assistant reporting a scan result:
 
